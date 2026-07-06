@@ -1,0 +1,91 @@
+@property --num {
+  syntax: '<integer>';
+  initial-value: 0;
+  inherits: false;
+}
+
+.counter {
+  font-weight: bold;
+  animation: count 4s forwards ease-in-out;
+  counter-reset: num var(--num);
+}
+
+.counter-item {
+  font-weight: bold;
+  animation: count var(--time, 7s) forwards ease-in-out;
+  counter-reset: num var(--num);
+}
+
+.counter-item::before {
+  content: counter(num);
+}
+
+.counter-item::after {
+  content: '+';
+}
+
+@keyframes count {
+  to {
+    --num: var(--target);
+  }
+}
+
+body {
+  font-family: 'Geist Pixel', sans-serif;
+}
+
+.bg-color {
+  background-color: rgba(111, 112, 111, 0.76);
+}
+
+/* --- Efek Parallax --- */
+.parallax {
+  background-image: url('../image/genshin-impact-lumine-5k-8k-3840x2160-5163.jpg');
+  min-height: 400px; /* Tinggi ditambah agar efek parallax terlihat */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+}
+
+.carousel-item img {
+  height: 90vh;
+  object-fit: cover;
+}
+
+.box-team-1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+  padding: 16px;
+  text-align: center;
+  background-color: red;
+  color: white;
+}
+
+.box-team-2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+  padding: 16px;
+  text-align: center;
+  background-color: orange;
+  color: white;
+}
+
+.box-team-3 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+  padding: 16px;
+  text-align: center;
+  background-color: green;
+  color: white;
+}
+
+.box-team-4 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+  padding: 16px;
+  text-align: center;
+  background-color: blue;
+  color: white;
+}
+@font-face {
+  font-family: monsserat;
+  src: url(../font/Montserrat-Italic-VariableFont_wght.ttf);
+}

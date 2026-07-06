@@ -1,0 +1,676 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hatoya</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+    <link rel="icon" href="image/Hatoya_Logo-removebg-preview.png" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script
+      src="https://kit.fontawesome.com/2e8c644617.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Geist+Pixel&display=swap');
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <section>
+      <nav class="bg-color navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="image/Hatoya_Logo-removebg-preview.png"
+              width="46px"
+              alt=""
+            />HATOYA</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Gallery
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">History</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Vision and Mission</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Coursel -->
+    <section>
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="image/audi-nuvolari-super-3840x2160-26704.jpg"
+              class="d-sm-block d-none w-100"
+              alt="..."
+            />
+            <img
+              src="image/bugatti-chiron-3840x2160-24117.jpg"
+              class="d-block d-md-none w-100"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Audi Nuvolari Super Sport</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="image/lamborghini-reventon-jet-fighter-3840x2160-73.jpg"
+              class="d-sm-block d-none w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Bugatti Chiron Super Sport</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="image/porsche-911-targa-4-3840x2160-26745.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Porsche 911 Targa 4 GTS</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="image/lamborghini-reventon-jet-fighter-3840x2160-73.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Lamborghini Reventon Jet Fighter</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <br />
+
+    <!-- Cards -->
+    <!-- <div class="col-12">
+       <div class="row row-cols-1 row-cols-md-2 g-md-4">
+         <div class="col">
+           <div class="card" >
+             <img
+               src="image/audi-nuvolari-super-3840x2160-26704.jpg"
+               class="card-img-top"
+               alt="..."
+             />
+             <div class="card-body">
+               <h5 class="card-title">Audi Nuvolari Super Sport</h5>
+               <p class="card-text">
+                 This is a longer card with supporting text below as a natural
+                 lead-in to additional content. This content is a little bit
+                 longer.
+               </p>
+             </div>
+           </div>
+         </div>
+         <div class="col">
+           <div class="card" >
+             <img
+               src="image/bugatti-chiron-3840x2160-24117.jpg"
+               class="card-img-top"
+               alt="..."
+             />
+             <div class="card-body">
+               <h5 class="card-title">Bugatti Chiron Super Sport</h5>
+               <p class="card-text">
+                 This is a longer card with supporting text below as a natural
+                 lead-in to additional content. This content is a little bit
+                 longer.
+               </p>
+             </div>
+           </div>
+         </div>
+         <div class="col">
+           <div class="card" >
+             <img
+               src="image/porsche-911-targa-4-3840x2160-26745.jpg"
+               class="card-img-top"
+               alt="..."
+             />
+             <div class="card-body">
+               <h5 class="card-title">Porsche 911 Targa 4 GTS</h5>
+               <p class="card-text">
+                 This is a longer card with supporting text below as a natural
+                 lead-in to additional content.
+               </p>
+             </div>
+           </div>
+         </div>
+         <div class="col">
+           <div class="card" >
+             <img
+               src="image/lamborghini-reventon-jet-fighter-3840x2160-73.jpg"
+               class="card-img-top"
+               alt="..."
+             />
+             <div class="card-body">
+               <h5 class="card-title">Lamborghini Reventon Jet Fighter</h5>
+               <p class="card-text">
+                 This is a longer card with supporting text below as a natural
+                 lead-in to additional content.
+               </p>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+    <br /> -->
+
+    <!-- Pylosophy -->
+    <section>
+      <div id="pilosopi" class="col-12 border border-black">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <h4>OUR PHILOSOPHY</h4>
+              <h5>A MORE PRODUCTIVE LIFE START WITH A STYLE OF OUR DESIGN</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio, provident eaque. Nisi distinctio enim sunt natus
+                cumque, ex aut! Non, modi esse quis nostrum harum quae? Unde
+                voluptatum nam nostrum!
+              </p>
+            </div>
+            <div class="col-6">
+              <img src="image/Albert Enstein.jpg" class="w-100" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- partner -->
+    <section>
+      <div class="col-12 p-3 border-top border-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 mb-3">
+              <h1>Our Achievement</h1>
+            </div>
+            <div class="box-team-1 col-md rounded m-md-2 my-2">
+              <h3><i class="fa fa-user"></i></h3>
+              <h3 class="counter-item" style="--target: 400"></h3>
+              <p>Partners</p>
+            </div>
+            <div class="box-team-2 col-md rounded m-md-2 my-2">
+              <h3><i class="fa fa-check"></i></h3>
+              <h3 class="counter-item" style="--target: 72"></h3>
+              <p>Projects</p>
+            </div>
+            <div class="box-team-3 col-md rounded m-md-2 my-2">
+              <h3><i class="fa fa-smile-o"></i></h3>
+              <h3></h3>
+              <p>Happy Clients</p>
+            </div>
+            <div class="box-team-4 col-md rounded m-md-2 my-2">
+              <h3><i class="fa fa-coffee"></i></h3>
+              <h3></h3>
+              <p>Meetings</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section>
+      <div id="gallery" class="col-12 my-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 mb-5">
+              <h1>OUR GALLERY</h1>
+            </div>
+            <div
+              class="col-md col-sm-4 my-md-0 my-2 mx-sm-2 p-3 border border-black rounded text-center"
+              data-bs-toggle="modal"
+              style="cursor: pointer"
+              data-bs-target="#gallery1"
+            >
+              <img
+                src="image/audi-nuvolari-super-3840x2160-26704.jpg"
+                class="w-100 mb-3"
+              />
+              <h5>Gallery</h5>
+              <p>Travelling with friends to montains</p>
+            </div>
+
+            <div
+              class="col-md col-sm-4 my-md-0 my-2 mx-sm-2 p-3 border border-black rounded text-center"
+              data-bs-toggle="modal"
+              style="cursor: pointer"
+              data-bs-target="#exampleModal"
+            >
+              <img
+                src="image/bugatti-chiron-3840x2160-24117.jpg"
+                class="w-100 mb-3"
+              />
+              <h5>Gallery</h5>
+              <p>Travelling with friends to montains</p>
+              <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="exampleModal"></button> -->
+            </div>
+
+            <div
+              class="col-md col-sm-4 my-md-0 my-2 mx-sm-2 p-3 border border-black rounded text-center"
+              data-bs-toggle="modal"
+              style="cursor: pointer"
+              data-bs-target="#exampleModal"
+            >
+              <img
+                src="image/lamborghini-reventon-jet-fighter-3840x2160-73.jpg"
+                class="w-100 mb-3"
+              />
+              <h5>Gallery</h5>
+              <p>Travelling with friends to montains</p>
+            </div>
+
+            <div
+              class="col-md col-sm-4 my-md-0 my-2 mx-sm-2 p-3 border border-black rounded text-center"
+              data-bs-toggle="modal"
+              style="cursor: pointer"
+              data-bs-target="#exampleModal"
+            >
+              <img
+                src="image/porsche-911-targa-4-3840x2160-26745.jpg"
+                class="w-100 mb-3"
+              />
+              <h5>Gallery</h5>
+              <p>Travelling with friends to montains</p>
+            </div>
+
+            <div
+              class="col-md col-sm-4 my-md-0 my-2 mx-sm-2 p-3 border border-black rounded text-center"
+              data-bs-toggle="modal"
+              style="cursor: pointer"
+              data-bs-target="#exampleModal"
+            >
+              <img
+                src="image/genshin-impact-lumine-5k-8k-3840x2160-5163.jpg"
+                class="w-100 mb-3"
+              />
+              <h5>Gallery</h5>
+              <p>Travelling with friends to montains</p>
+            </div>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="gallery1"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      Genshin Impact
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <img
+                      src="image/audi-nuvolari-super-3840x2160-26704.jpg"
+                      class="w-100 mb-3"
+                    />
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Save changes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="col-12 p-3 border-top border-buttom">
+      <div class="container">
+        <div class="row">
+          <h1 class="mb-3">FAQ</h1>
+          <div class="accordion" id="faqAccordion">
+            <!-- accordion 1 -->
+            <div class="col-12 p-3 border-top border-bottom">
+              <div class="container">
+                <div class="row">
+                  <h1 class="mb-3">FAQ</h1>
+                  <!-- ID Utama: faqAccordion -->
+                  <div class="accordion" id="faqAccordion">
+                    <!-- accordion 1 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="header1">
+                        <!-- data-bs-target harus pakai # dan mengarah ke id kontennya -->
+                        <button
+                          class="accordion-button"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapse1"
+                          aria-expanded="true"
+                          aria-controls="collapse1"
+                        >
+                          What design services does your agency specialize in?
+                        </button>
+                      </h2>
+                      <!-- Tag h2 ditutup dulu di atas, baru konten collapse ditaruh di bawahnya -->
+                      <div
+                        id="collapse1"
+                        class="accordion-collapse collapse show"
+                        aria-labelledby="header1"
+                        data-bs-parent="#faqAccordion"
+                      >
+                        <div class="accordion-body">
+                          Lorem ipsum, dolor sit amet consectetur adipisicing
+                          elit. Sapiente culpa facilis maxime aliquam debitis
+                          incidunt, iure fugiat optio, exercitationem fuga
+                          vitae!
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- accordion 2 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="header2">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapse2"
+                          aria-expanded="false"
+                          aria-controls="collapse2"
+                        >
+                          What design services does your agency specialize in?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapse2"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="header2"
+                        data-bs-parent="#faqAccordion"
+                      >
+                        <div class="accordion-body">
+                          Lorem ipsum, dolor sit amet consectetur adipisicing
+                          elit. Sapiente culpa facilis maxime aliquam debitis
+                          incidunt, iure fugiat optio, exercitationem fuga
+                          vitae!
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- accordion 3 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="header3">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapse3"
+                          aria-expanded="false"
+                          aria-controls="collapse3"
+                        >
+                          What design services does your agency specialize in?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapse3"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="header3"
+                        data-bs-parent="#faqAccordion"
+                      >
+                        <div class="accordion-body">
+                          Lorem ipsum, dolor sit amet consectetur adipisicing
+                          elit. Sapiente culpa facilis maxime aliquam debitis
+                          incidunt, iure fugiat optio, exercitationem fuga
+                          vitae!
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- accordion 3 end -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="col-12 parallax text-center">
+        <div class="container">
+          <div class="row">
+            <h2>JOIN OUR NETWORK</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
+              nesciunt fuga. Debitis necessitatibus nihil esse numquam
+              voluptatem dolorum rem. Nihil quae aliquid dolorem ducimus
+              asperiores in eligendi sapiente blanditiis aut.
+            </p>
+          </div>
+          <div class="col-md-12 offset-m-3">
+            <form action="" method="post" name="mail">
+              <h3>JOIN OUR NEWSLETTER</h3>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="insert your email here"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-buttom"
+      >
+        <div class="me-5 d-none d-lg-block">
+          <span style="font-family: monserrat"
+            >Get conntected with us on social networks:</span
+          >
+        </div>
+        <div>
+          <a
+            href="https://www.facebook.com"
+            class="me-4 text-reset text-decoration-none"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a
+            href="https://www.facebook.com"
+            class="me-4 text-reset text-decoration-none"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a
+            href="https://www.facebook.com"
+            class="me-4 text-reset text-decoration-none"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a
+            href="https://www.facebook.com"
+            class="me-4 text-reset text-decoration-none"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+      </section>
+      <section>
+        <div class="container txt-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-game me-3"></i>DG Digital
+              </h6>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloribus dolorum reiciendis asperiores.
+              </p>
+            </div>
+            <div class="col-ms-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-reset fw-bold mb-4">Products</h6>
+              <p>
+                <a href="History.html" class="text-uppercase fw-bold mb-4"
+                  >History</a
+                >
+              </p>
+              <p>
+                <a href="vision.html" class="text-uppercase fw-bold mb-4"
+                  >Vision & Mission</a
+                >
+              </p>
+              <p>
+                <a href="contact.html" class="text-uppercase fw-bold mb-4"
+                  >Contact</a
+                >
+              </p>
+            </div>
+            <!-- LINK -->
+            <div class="col-ms-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">contact</h6>
+              <p><i class="fast fa-home me">Jakarta. Jkt 12400 ID</i></p>
+              <p><i class="fas fa-envelope me">jhdhu@gmail.com</i></p>
+              <p><i class="fas-solid fa-phone me">+62 8299912</i></p>
+              <p><i class="fas fa-print">+62 8299912</i></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</html>
