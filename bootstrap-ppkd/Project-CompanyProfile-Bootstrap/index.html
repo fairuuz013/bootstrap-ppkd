@@ -1,0 +1,784 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restoku</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+    <link rel="icon" href="image/RESTOKU-LOGO.png" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script
+      src="https://kit.fontawesome.com/2e8c644617.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Geist+Pixel&display=swap');
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <section>
+      <nav class="bg-color navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="image/RESTOKU-LOGO.png"
+              width="46px"
+              style="border-radius: 100px"
+              alt="..."
+            />RESTOKU</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about-us.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Gallery
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./history.html">History</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Vision and Mission</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Coursel -->
+    <section>
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="image/rendang.jpg"
+              class="d-sm-block d-none w-100"
+              alt="..."
+            />
+            <!-- <img
+              src="image/bugatti-chiron-3840x2160-24117.jpg"
+              class="d-block d-md-none w-100"
+            /> -->
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Rendang khas minang</h5>
+              <p>Rendang di restoran kami menjadi salah satu makanan terbaik</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="image/soto-ayam.png"
+              class="d-sm-block d-none w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Soto Ayam</h5>
+              <p>Soto Ayam menjadi salah satu signature restoran kami</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="image/nasiuy.png" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Nasi Goreng</h5>
+              <p>Nasi Goreng dengan cita rasa khas nusantara</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="image/gado-gado.png" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Gado-Godo</h5>
+              <p>
+                Gado-Gado di restoran kami mendapat sebagai gado-gado terbaik di
+                indonesia
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <br />
+
+    <!-- Pylosophy -->
+    <section>
+      <div id="pilosopi" class="col-12 border border-black py-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-6">
+              <h4>Filosofi Kami</h4>
+              <h5>Kehangatan Tradisi Nusantara dalam Setiap Suapan</h5>
+              <p>
+                Kami percaya bahwa makanan bukan sekadar pengisi perut,
+                melainkan sebuah jembatan cerita dan budaya.
+                <strong>Restoku</strong> lahir dari kecintaan kami terhadap
+                kekayaan rempah asli Indonesia. Kami berkomitmen untuk
+                menyajikan cita rasa autentik warisan leluhur yang dipadukan
+                dengan pelayanan modern, menghadirkan kenyamanan dan kehangatan
+                rumah di setiap hidangan yang kami sajikan.
+              </p>
+            </div>
+            <div class="col-6">
+              <img src="image/RESTOKU-LOGO.png" class="w-100" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- partner -->
+    <!-- achievement -->
+    <section>
+      <div class="col-12 p-5 border-top border-bottom bg-light">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-12 mb-4">
+              <h2 class="fw-bold">Pencapaian Kami</h2>
+              <p class="text-muted">
+                Bukti dedikasi kami dalam melestarikan cita rasa Nusantara
+              </p>
+            </div>
+
+            <!-- Tambahkan inline style --target di setiap counter-item -->
+            <div
+              class="box-team-1 col-md rounded m-md-2 my-2 p-4 border bg-white shadow-sm"
+            >
+              <h3 class="text-warning"><i class="fa fa-cutlery"></i></h3>
+              <h3
+                class="counter-item fw-bold"
+                style="color: black; --target: 15000"
+              ></h3>
+              <p class="text-muted mb-0">Porsi Terjual</p>
+            </div>
+
+            <div
+              class="box-team-2 col-md rounded m-md-2 my-2 p-4 border bg-white shadow-sm"
+            >
+              <h3 class="text-warning"><i class="fa fa-book"></i></h3>
+              <h3
+                class="counter-item fw-bold"
+                style="color: black; --target: 45"
+              ></h3>
+              <p class="text-muted mb-0">Varian Menu Otentik</p>
+            </div>
+
+            <div
+              class="box-team-3 col-md rounded m-md-2 my-2 p-4 border bg-white shadow-sm"
+            >
+              <h3 class="text-warning"><i class="fa fa-star"></i></h3>
+              <h3
+                class="counter-item fw-bold"
+                style="color: black; --target: 2500"
+              ></h3>
+              <p class="text-muted mb-0">Ulasan Bintang 5</p>
+            </div>
+
+            <div
+              class="box-team-4 col-md rounded m-md-2 my-2 p-4 border bg-white shadow-sm"
+            >
+              <h3 class="text-warning"><i class="fa fa-map-marker"></i></h3>
+              <h3
+                class="counter-item fw-bold"
+                style="color: black; --target: 5"
+              ></h3>
+              <p class="text-muted mb-0">Cabang Restoran</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section>
+      <div id="gallery" class="col-12 my-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 mb-4 text-center">
+              <h2 class="fw-bold">Galeri Kami</h2>
+              <p class="text-muted">
+                Intip kehangatan suasana dan kelezatan hidangan autentik kami
+              </p>
+            </div>
+
+            <!-- Kartu 1: Makanan Utama -->
+            <div
+              class="col-lg-3 col-md-6 col-sm-6 my-2 px-2"
+              data-bs-toggle="modal"
+              style="cursor: pointer"
+              data-bs-target="#galleryModal1"
+            >
+              <div
+                class="p-3 border rounded text-center bg-white shadow-sm h-100"
+              >
+                <img
+                  src="image/rendang.jpg"
+                  class="w-100 rounded mb-3 object-fit-cover"
+                  style="height: 180px"
+                  alt="Rendang Daging"
+                />
+                <h5 class="fw-semibold">Hidangan Utama</h5>
+                <p class="text-muted small">
+                  Rendang daging sapi pilihan dengan bumbu rempah Minang yang
+                  meresap kaya rasa.
+                </p>
+              </div>
+            </div>
+
+            <!-- Kartu 2: Sambal & Pelengkap -->
+            <div
+              class="col-lg-3 col-md-6 col-sm-6 my-2 px-2"
+              data-bs-toggle="modal"
+              style="cursor: pointer"
+              data-bs-target="#galleryModal2"
+            >
+              <div
+                class="p-3 border rounded text-center bg-white shadow-sm h-100"
+              >
+                <img
+                  src="image/aneka-sambal1.png"
+                  class="w-100 rounded mb-3 object-fit-cover"
+                  style="height: 180px"
+                  alt="Aneka Sambal Nusantara"
+                />
+                <h5 class="fw-semibold">Warisan Pedas</h5>
+                <p class="text-muted small">
+                  Aneka sambal ulek segar khas daerah, diracik mendadak untuk
+                  menjaga cita rasa.
+                </p>
+              </div>
+            </div>
+
+            <!-- Kartu 3: Suasana Restoran -->
+            <div
+              class="col-lg-3 col-md-6 col-sm-6 my-2 px-2"
+              data-bs-toggle="modal"
+              style="cursor: pointer"
+              data-bs-target="#galleryModal3"
+            >
+              <div
+                class="p-3 border rounded text-center bg-white shadow-sm h-100"
+              >
+                <img
+                  src="image/suasana-restaurant.jpg"
+                  class="w-100 rounded mb-3 object-fit-cover"
+                  style="height: 180px"
+                  alt="Suasana Restoran"
+                />
+                <h5 class="fw-semibold">Suasana Resto</h5>
+                <p class="text-muted small">
+                  Desain interior bernuansa kayu tradisional yang nyaman dan
+                  hangat untuk keluarga.
+                </p>
+              </div>
+            </div>
+
+            <!-- Kartu 4: Miniman Tradisional -->
+            <div
+              class="col-lg-3 col-md-6 col-sm-6 my-2 px-2"
+              data-bs-toggle="modal"
+              style="cursor: pointer"
+              data-bs-target="#galleryModal4"
+            >
+              <div
+                class="p-3 border rounded text-center bg-white shadow-sm h-100"
+              >
+                <img
+                  src="image/wedang-ronde-lsbcb33iUO9DQ.jpg"
+                  class="w-100 rounded mb-3 object-fit-cover"
+                  style="height: 180px"
+                  alt="Wedang Tradisional"
+                />
+                <h5 class="fw-semibold">Minuman Segar</h5>
+                <p class="text-muted small">
+                  Pilihan minuman hangat tradisional dan es segar pengiring
+                  santap nikmat Anda.
+                </p>
+              </div>
+            </div>
+
+            <!-- Modal 1: Rendang -->
+            <div
+              class="modal fade"
+              id="galleryModal1"
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fw-bold">Rendang Daging Autentik</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body text-center">
+                    <img
+                      src="image/rendang.jpg"
+                      class="img-fluid rounded"
+                      alt="Rendang Daging"
+                    />
+                    <p class="mt-3 text-muted">
+                      Dimasak perlahan selama berjam-jam menggunakan santan
+                      murni dan campuran 16 macam rempah khas Nusantara untuk
+                      menghasilkan tekstur daging yang empuk dan bumbu yang
+                      hitam pekat meresap.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal 2: Sambal -->
+            <div
+              class="modal fade"
+              id="galleryModal2"
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fw-bold">Aneka Sambal Nusantara</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body text-center">
+                    <img
+                      src="image/aneka-sambal1.png"
+                      class="img-fluid rounded"
+                      alt="Aneka Sambal Nusantara"
+                    />
+                    <p class="mt-3 text-muted">
+                      Mulai dari Sambal Terasi, Sambal Matah, hingga Sambal Ijo.
+                      Kami menyajikannya segar demi memberikan sensasi pedas
+                      yang pas sebagai pendamping hidangan utama.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal 3: Suasana -->
+            <div
+              class="modal fade"
+              id="galleryModal3"
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fw-bold">Kenyamanan Tradisi</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body text-center">
+                    <img
+                      src="image/suasana-restaurant.jpg"
+                      class="img-fluid rounded"
+                      alt="Suasana Restoran"
+                    />
+                    <p class="mt-3 text-muted">
+                      Ruangan yang luas dengan sentuhan arsitektur khas
+                      Indonesia yang ramah anak dan keluarga, sangat cocok untuk
+                      acara kumpul bersama, arisan, maupun jamuan bisnis.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal 4: Minuman -->
+            <div
+              class="modal fade"
+              id="galleryModal4"
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fw-bold">
+                      Minuman Tradisional Tradisional
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body text-center">
+                    <img
+                      src="image/wedang-ronde-lsbcb33iUO9DQ.jpg"
+                      class="img-fluid rounded"
+                      alt="Wedang Tradisional"
+                    />
+                    <p class="mt-3 text-muted">
+                      Nikmati kehangatan Wedang Ronde, Kunyit Asam, atau
+                      kesegaran Es Dawet Ayu asli buatan dapur kami yang
+                      menggunakan gula merah alami.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="col-12 p-3 border-top border-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 p-3">
+            <div class="container">
+              <div class="row">
+                <h1 class="mb-4 text-center">
+                  Frequently Asked Questions (FAQ)
+                </h1>
+
+                <!-- ID Utama: faqAccordion -->
+                <div class="accordion" id="faqAccordion">
+                  <!-- accordion 1 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="header1">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse1"
+                        aria-expanded="true"
+                        aria-controls="collapse1"
+                      >
+                        Apakah semua menu di Restaurant Nusantara dijamin halal?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapse1"
+                      class="accordion-collapse collapse show"
+                      aria-labelledby="header1"
+                      data-bs-parent="#faqAccordion"
+                    >
+                      <div class="accordion-body">
+                        Ya, seluruh hidangan yang kami sajikan 100% menggunakan
+                        bahan-bahan pilihan yang halal, higienis, dan diproses
+                        sesuai dengan standar kebersihan yang ketat.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- accordion 2 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="header2">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse2"
+                        aria-expanded="false"
+                        aria-controls="collapse2"
+                      >
+                        Apakah menerima reservasi untuk acara besar atau
+                        catering?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapse2"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="header2"
+                      data-bs-parent="#faqAccordion"
+                    >
+                      <div class="accordion-body">
+                        Tentu saja! Kami melayani reservasi tempat untuk acara
+                        keluarga, gathering kantor, ulang tahun, hingga layanan
+                        catering luar ruangan. Silakan hubungi tim kami via
+                        halaman kontak.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- accordion 3 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="header3">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse3"
+                        aria-expanded="false"
+                        aria-controls="collapse3"
+                      >
+                        Menu khas daerah mana saja yang tersedia di sini?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapse3"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="header3"
+                      data-bs-parent="#faqAccordion"
+                    >
+                      <div class="accordion-body">
+                        Kami menyajikan representasi kuliner terbaik dari Sabang
+                        sampai Merauke, mulai dari Rendang Padang yang otentik,
+                        Gudeg Jogja yang manis gurih, hingga Ayam Betutu khas
+                        Bali yang kaya rempah.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- parallax first -->
+    <section>
+      <div
+        class="col-12 parallax text-center py-5"
+        style="background-color: #f8f9fa"
+      >
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8 mb-4">
+              <h2>GABUNG DENGAN KOMUNITAS KAMI</h2>
+              <p>
+                Jadilah yang pertama mencicipi petualangan rasa kuliner
+                tradisional. Dapatkan info menu musiman terbaru, resep rahasia
+                dari chef kami, dan promo eksklusif mingguan langsung di email
+                Anda.
+              </p>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <form action="" method="post" name="mail">
+                <h3 class="mb-3">LANGGANAN NEWSLETTER</h3>
+                <div class="input-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Masukkan email aktif Anda di sini"
+                    required
+                  />
+                  <button class="btn btn-dark" type="submit">Daftar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- paralax end  -->
+
+    <footer class="text-center text-lg-start bg-dark text-light pt-1">
+      <!-- Social Media Section -->
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom border-secondary"
+      >
+        <div class="me-5 d-none d-lg-block">
+          <span style="font-family: 'Montserrat', sans-serif"
+            >Terhubung dengan kami di media sosial:</span
+          >
+        </div>
+        <div>
+          <a
+            href="https://www.facebook.com"
+            class="me-4 text-reset text-decoration-none"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://www.instagram.com"
+            class="me-4 text-reset text-decoration-none"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.twitter.com"
+            class="me-4 text-reset text-decoration-none"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.youtube.com"
+            class="me-4 text-reset text-decoration-none"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- Footer Links Section -->
+      <section class="py-4">
+        <div class="container text-center text-md-start mt-3">
+          <div class="row mt-3">
+            <!-- Tentang Resto -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-utensils me-3"></i>Rasa Nusantara
+              </h6>
+              <p>
+                Menyajikan kehangatan dan keaslian cita rasa masakan tradisional
+                Indonesia dengan bahan baku premium dan resep warisan leluhur.
+              </p>
+            </div>
+
+            <!-- Navigasi / Layanan -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Tentang Kami</h6>
+              <p>
+                <a href="history.html" class="text-reset text-decoration-none"
+                  >Sejarah Resto</a
+                >
+              </p>
+              <p>
+                <a href="vision.html" class="text-reset text-decoration-none"
+                  >Visi & Misi</a
+                >
+              </p>
+              <p>
+                <a href="menu.html" class="text-reset text-decoration-none"
+                  >Menu Andalan</a
+                >
+              </p>
+              <p>
+                <a href="contact.html" class="text-reset text-decoration-none"
+                  >Kontak & Reservasi</a
+                >
+              </p>
+              <p>
+                <a href="about-us.html" class="text-reset text-decoration-none"
+                  >Kontak & Reservasi</a
+                >
+              </p>
+            </div>
+
+            <!-- Info Kontak -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Hubungi Kami</h6>
+              <p>
+                <i class="fas fa-map-marker-alt me-3"></i> Jl. Kuliner Nusantara
+                No. 12, Jakarta, 12400
+              </p>
+              <p><i class="fas fa-envelope me-3"></i> info@rasanusantara.com</p>
+              <p><i class="fas fa-phone me-3"></i> +62 21 8299912</p>
+              <p><i class="fab fa-whatsapp me-3"></i> +62 812 3456 7890</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hak Cipta -->
+      <div class="text-center p-4 bg-black bg-opacity-25">
+        © 2026 Rasa Nusantara Resto. All Rights Reserved.
+      </div>
+    </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</html>

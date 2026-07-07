@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Efek Parallax --- */
+.parallax {
+  background-image: url('../image/genshin-impact-lumine-5k-8k-3840x2160-5163.jpg');
+  min-height: 400px; /* Tinggi ditambah agar efek parallax terlihat */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+}
