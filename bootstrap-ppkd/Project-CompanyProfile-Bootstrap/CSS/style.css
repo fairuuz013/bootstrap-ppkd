@@ -88,3 +88,15 @@ z body {
   font-family: monsserat;
   src: url(../font/Montserrat-Italic-VariableFont_wght.ttf);
 }
+
+.hover-card {
+  transition:
+    transform 0.3,
+    box-shadow 0.3 ease;
+  cursor: pointer;
+}
+
+.hover-card:hover {
+  transform: translate(-px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
